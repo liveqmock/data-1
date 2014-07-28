@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-size:12px;
+	font-family:"微软雅黑",Arial, Helvetica, sans-serif;
+}
+ul,li{
+	list-style:none;
+}
+img{
+	border:0px;
+}
+table,td{
+	border-collapse:collapse;
+	vertical-align:top;
+}
+a{
+	text-decoration:none;
+}
+.clearfix:after{
+ content:".";
+ display:block;
+ height:0;
+ line-height:0;
+ clear:both;
+ visibility:hidden;
+}
+.clearfix{display:inline-block;}
+/* Hide from IE Mac */
+.clearfix{display:block;}
+/* End hide from IE Mac */
+/* end of clearfix */
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+
+.h10{height:10px;}

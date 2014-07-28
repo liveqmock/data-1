@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GBK"?> 
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="ehcache.xsd"
+        updateCheck="true" monitoring="autodetect"
+        dynamicConfig="true">
+   <diskStore path="${ehcache.datatemp}"/>
+    <defaultCache
+           maxElementsInMemory="0"  
+           eternal="true" 
+           overflowToDisk="false"
+           timeToIdleSeconds="1200"
+           timeToLiveSeconds="1200">
+    </defaultCache>
+        
+     <!-- 用于加载字典表的信息 -->
+     <cache name="dataDictCahce"  
+            maxElementsInMemory="100"
+            eternal="true"
+            overflowToDisk="true"
+            maxElementsOnDisk="100000"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="12000"
+            memoryStoreEvictionPolicy="LRU"/>
+</ehcache>
